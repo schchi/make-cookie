@@ -195,7 +195,7 @@ buyFacility.addEventListener("click", function() {
 ********************************/
 //set default values
 let grandpaAuto = false;
-let grandpaPower = -1;
+let grandpaPower = 0;
 let grandpaPriceAmount = 0;
 let grandpaLevelNumber = 0;
 
@@ -217,7 +217,7 @@ buyGrandpa.addEventListener("click", function() {
   //update price
     grandpaPriceAmount = Math.floor(grandpaPriceAmount * 1.33);
   //update grandpa power
-    grandpaPower += 10;
+    grandpaPower -=1;
   //turn autoGrandpa on!
     autoGrandpa = true
     autoGrandpaStart();
